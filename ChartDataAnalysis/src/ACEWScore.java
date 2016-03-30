@@ -7,7 +7,10 @@ public class ACEWScore {
 	ACEWScore(PatientObsDataSet patientObsDataSet){
 		score = 3;
 		qMET = "hello";
-	//	if patientObsDataSet.avpu.value() = "A" 
+		
+		if (patientObsDataSet.avpu.value == "A"){
+			score = 4;
+		}
 	
 	}
 	
@@ -17,6 +20,7 @@ public class ACEWScore {
 		
 		
 	}
+	
 	
 	char compareParam(int param, int comparitor){
 		// returns -1 for less than, 0 for equal and +1 for greater than
