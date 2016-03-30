@@ -8,7 +8,7 @@ public class ACEWScore {
 		score = 3;
 		qMET = "hello";
 		
-		if (patientObsDataSet.avpu.value == "A"){
+		if (patientObsDataSet.avpu.getValue() == "A"){
 			score = 4;
 		}
 	

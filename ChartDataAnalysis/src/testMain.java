@@ -15,25 +15,25 @@ public class testMain {
 		patient.patientObsSets[0].avpu.setValue("A");
 		
 				
-		patient.patientObsSets[0].respRate.setThresholds(12, 4, 5);
-		patient.patientObsSets[0].spO2.setComparators(96);
-		patient.patientObsSets[0].inspiredO2.setComparators("RA");
-		patient.patientObsSets[0].temp.setComparators(36.1);
-		patient.patientObsSets[0].sistBP.setComparators(90);
-		patient.patientObsSets[0].heartRate.setComparators(90);
-		patient.patientObsSets[0].avpu.setComparators("A");
+		patient.respRateThreshold.setThresholds(12, 4, 5);
+		patient.respRateThreshold.setComparators(96);
+		patient.respRateThreshold.setComparators("RA");
+		patient.respRateThreshold.setComparators(36.1);
+		patient.respRateThreshold.setComparators(90);
+		patient.respRateThreshold.setComparators(90);
+		patient.respRateThreshold.setComparators("A");
 		
-		System.out.println(Arrays.toString(patient.patientObsSets[0].respRate.thresholds));
+		System.out.println(Arrays.toString(patient.respRateThreshold.getThresholds()));
 		
-		System.out.println(patient.patientObsSets[0].respRate.value);
-		System.out.println(patient.patientObsSets[0].spO2.value);
-		System.out.println(patient.patientObsSets[0].inspiredO2.value);
-		System.out.println(patient.patientObsSets[0].temp.value);
-		System.out.println(patient.patientObsSets[0].sistBP.value);
-		System.out.println(patient.patientObsSets[0].heartRate.value);
-		System.out.println(patient.patientObsSets[0].avpu.value);
+		System.out.println(patient.patientObsSets[0].respRate.getValue());
+		System.out.println(patient.patientObsSets[0].spO2.getValue());
+		System.out.println(patient.patientObsSets[0].inspiredO2.getValue());
+		System.out.println(patient.patientObsSets[0].temp.getValue());
+		System.out.println(patient.patientObsSets[0].sistBP.getValue());
+		System.out.println(patient.patientObsSets[0].heartRate.getValue());
+		System.out.println(patient.patientObsSets[0].avpu.getValue());
 		
-	//	System.out.println(patientObsDataSet.avpu.thresholds[0]);
+		System.out.println(patient.respRateThreshold.getThresholds()[1]);
 		System.out.println();
 		
 		ACEWScore ACEWScore = new ACEWScore(patient.patientObsSets[0]);

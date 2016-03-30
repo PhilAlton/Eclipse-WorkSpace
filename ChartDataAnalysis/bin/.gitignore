@@ -59,3 +59,11 @@
 /OtherClass.class
 /OtheClass.class
 /Patient$thresholds.class
+/Patient$AVPUThreshold.class
+/Patient$HeartRateThreshold.class
+/Patient$InspiredO2Threshold.class
+/Patient$RespRateThreshold.class
+/Patient$SistBPThreshold.class
+/Patient$SpO2Threshold.class
+/Patient$TempThreshold.class
+/Patient$Threshold.class
